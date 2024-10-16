@@ -1,0 +1,753 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+
+/*Global Config*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+}
+
+
+.icono-pagina {
+    border-radius: 5100px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+
+}
+
+/*Hamburguesa*/
+
+.hamburguesa {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hamburguesa span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.mostrar {
+    display: block;
+}
+
+@media(max-width: 768px) {
+    .hamburguesa {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #menu li {
+        margin-bottom: 10px;
+    }
+
+    #menu a {
+        color: #fff;
+    }
+}
+
+#hamburguesa:checked+#menu {
+    display: block;
+}
+
+
+
+
+/*Nagecation*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+
+}
+
+.navbar {
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+   
+}
+
+nav img {
+    width: 80px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+    list-style-type: none;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar a {
+    color: #148f77;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 25px;
+}
+
+.navbar li:hover {
+    border-radius: 1px solid #ddd;
+    color: #76d7c4;
+    transform: scale(1.1);
+}
+
+.navbar a:hover {
+    color: #76d7c4;
+}
+
+/*Main content*/
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.section1 {
+    margin-bottom: 50px;
+}
+
+.section1-main .section1-container h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+}
+
+
+
+.section1 h1 {
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: #148f77;
+    font-size: 40px;
+}
+
+.section1 p {
+    font-size: 18px;
+    margin: 50px 200px 50px 200px;
+}
+
+.section1 button {
+    background-color: #4caf50;
+    color: #f7f7f7;
+    border: none;
+    padding: 20px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+
+
+.section1 button a {
+    text-decoration: none;
+    color: white;
+}
+
+.section1 button:hover {
+
+    transform: scale(1.1);
+}
+
+/*Problematicas*/
+
+.problematicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+
+    border-radius: 10px;
+    background-color: #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.problematicas h2 {
+    margin-top: 40px;
+    font-size: 70px;
+    color: #148f77;
+    margin-bottom: 5px;
+    margin-right: 25px;
+    border-radius: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.problematicas button a {
+    color: white;
+    text-decoration: none;
+}
+
+.problematicas {
+    background: transparent;
+}
+
+.problematicas button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.problematicas button:hover {
+    transform: scale(1.1);
+}
+
+
+.problematicas ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.problematicas li {
+    transform: scale(1.1);
+    padding: 10px;
+}
+
+.problematicas a {
+    color: #148f77;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+
+.problematicas .contenido-1 {
+    margin: 15px;
+}
+
+
+.problematicas-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.problematicas p {
+    font-size: 20px;
+}
+
+.problematicas-contenedor {
+    margin: 200px;
+}
+
+
+/*Types*/
+
+main {
+    overflow: hidden;
+}
+
+.types p {
+    font-size: 20px;
+}
+
+.types {
+    width: 60%;
+    margin: 20px;
+    float: left;
+}
+
+aside {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #dddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    float: right;
+}
+
+aside p {
+    margin-top: 30px;
+    margin: 0;
+}
+
+.imagen-aside {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.types-container h2 {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    color: #148f77;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.types h3 {
+    color: #148f77;
+}
+
+.types ul {
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.types li {
+    margin-bottom: 20px;
+}
+
+
+/*Typograpy*/
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+.mapamental {
+    margin-top: 30px;
+}
+.mapamental-img img {
+    position: relative;
+    max-width: 50%;
+    height: auto;
+    display: block;
+    height: 50%;
+    width: 80%;
+    border: 5px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #888888;
+    filter: grayscale(100%);
+    transition: tranform 0.2s;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.problemas h2 {
+    color: #148f77;
+    padding: 20px;
+}
+
+.problemas h3 {
+    color: #148f77;
+    padding: 20px;
+}
+
+.problemas {
+    margin: 10px 10px 70px 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 800px;
+    height: 800px;
+}
+
+.problemas-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    border: 1px solid #ccc;
+    justify-content: flex-end;
+    padding: 10px;
+
+}
+
+.problemas h2 {
+    margin: 20px;
+}
+
+.problemas button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.problemas-img img{
+    border-radius: 10%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.problemas a {
+    text-decoration: none;
+    color: white;
+}
+
+.problemas button:hover {
+    transform: scale(1.1);
+}
+
+
+
+/*Media Queries*/
+
+@media(max-width:768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .problematicasul {
+        flex-direction: column;
+    }
+}
+
+
+@media(max-width: 480px) {
+    .types {
+        width: 100%;
+    }
+}
+
+@media(max-width: 480px) {
+    .problematicasul {
+        flex-direction: column;
+    }
+
+    .problematicasli {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+/*Fuentes estilos*/
+@media(max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+}
+
+/*Tamaño de los elementos*/
+
+@media(max-width: 768px) {
+    .problemas button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 468px) {
+    .problemas button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+}
+
+
+/*Diseño de navegacion*/
+
+@media(max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-bottom: 10px;
+    }
+}
+
+
+/*Ajuste diseño, problematicas*/
+@media(max-width: 768px) {
+    .problematicas ul {
+        flex-direction: column;
+    }
+
+    .problematicas li {
+        margin-bottom: 10px;
+    }
+
+}
+
+/*Seccion de tipos y consecuencias*/
+@media(max-width: 768px) {
+    .types {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col-md-4 {
+    flex-basis: 33.33%;
+    padding: 20px;
+}
+
+footer h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ccc;
+    transform: scale(1.1);
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+@media(min-width: 360px) {
+    .section1 h1 {
+        font-size: 30px;
+        margin-left: 60px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .problematicas {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .problematicas h2 {
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .problematicas ul {
+        align-items: center;
+    }
+
+    .problematicas a:hover {
+        transition: all 0.3s ease;
+    }
+
+    .types h2 {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .mapamental {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .footer-container {
+        margin-left: 50px;
+        align-items: center;
+    }
+}
+
+@media(max-width: 932px) {
+    .section1 h1 {
+        font-size: 30px;
+        margin-left: 60px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .problematicas {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .problematicas h2 {
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .problematicas ul {
+        align-items: center;
+    }
+
+    .problematicas a:hover {
+        transition: all 0.3s ease;
+    }
+
+    .types h2 {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .mapamental {
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+    }
+
+    .problemas {
+        display: none;
+    }
+
+    .footer-container {
+        margin-left: 50px;
+        align-items: center;
+    }
+}
